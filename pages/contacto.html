@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- ESTILO-->
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- ICONO-->
+  <link rel="shortcut icon" href="../asset/img/favicon.jpg">
+  <title>De viaje en Portugal</title>
+  
+</head>
+
+<body>
+
+  <header>  
+    <nav class="navbar navbar-expand-lg  sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../asset/img/favicon.jpg" alt="logo. Imagen de un avion" class="d-inline-block align-text-top headerIcon">
+          <h1>Emigrar a Portugal</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Emigrar a Portugal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="laIdea.html">La Idea</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="recursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recursos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="recursos.html#uno">Recurso 1</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#dos">Recurso 2</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#tres">Recurso 3</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#cuatro">Recurso 4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="viajecitos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Viajecitos</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="viajecitos.html#uno">Viaje 1</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#dos">Viaje 2</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#tres">Viaje 3</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#cuatro">Viaje 4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div>
+        <h2>PARTICIPA!</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quas, minus nisi rerum consectetur libero commodi asperiores, tempora fugit magnam similique ullam explicabo laboriosam iste amet numquam, delectus quaerat harum?</p>
+        <div class="flex">
+          <img class="contacto-img " src="../asset/img/surf.jpg" alt="personas con tablas de surf">
+          <img class="contacto-img" src="../asset/img/laIdea.jpg" alt="imagen de calle peatonal en Portugal con bares en un cielo despejado">
+        </div>
+      </div>
+
+      <form id="form" class="form" action="" method="post" enctype="text/plain">
+        <h3>Contactanos!</h3>
+        <fieldset>
+          <legend>Datos del contacto</legend>
+            <label for="form-name">Nombre:<input id="form-name" name="nombre" placeholder="Ingrese su nombre" required></label>
+            <label for="form-email">Email:<input type="email" id="form-email" name="email" placeholder="Ingrese su email" required></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Motivo de contacto</legend>
+          <label for="select">Seleccione una opcion:  
+            <select id="select" required>
+                <option value="consulta">Consulta</option>
+                <option value="experiencia">Contar tu experiencia</option>
+                <option value="agradecimiento/donaciones">Agradecimiento / Donaciones</option>
+                <option value="otro">Otro asunto</option>
+            </select>
+          </label>
+        <label for="form-coment">Mensaje:<textarea id="form-coment" placeholder="Escriba aqui" rows=”10” cols=”100”  required></textarea></label>
+      </fieldset>
+        <input type="submit" value="Enviar"   name="mensaje"/>
+    </form>
+
+    <div class="map-div">
+      <h3>Portugal, ¿donde?</h3>
+      <p>Acá estamos...</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13300666.478501316!2d-29.434839202832368!3d35.52323871163527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb32242dbf4226d5%3A0x2ab84b091c4ef041!2sPortugal!5e0!3m2!1ses!2spt!4v1705091511170!5m2!1ses!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Mapa de Portugal y sus islas provisto por GoogleMaps</iframe>
+    </div>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-div-brand div-size-30">
+      <img class="headerIcon" src="../asset/img/favicon.jpg">
+      <div class="footer-div-brand-texto">
+        <h3>De viaje en Portugal</h3>
+        <p>&copy; Copyright 2024</p>
+      </div>
+    </div>
+
+    <div class="footer-div footer-social div-size-20">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Youtube</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-div div-size-20 footer-contacto">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="pages/contacto.html#form">Email</a></li>
+        <li><a href="pages/contacto.html#form">Donaciones</a></li>
+        <li><a href="pages/laIdea.html">Sobre mi</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-div div-size-30">
+      <h4 class="footer-div-subscribe-cont">Subscribite a nuestro Newsletter</h4>
+      <form action="" method="post">
+        <input class="footer-form-input" type="email" required placeholder="Ingresa tu email" id="Newsletter-email">
+        <p >Mantenete al dia y se un experto en emigrar. 
+        Dale a Subscribir!</p>
+        <input class="terminosYcondiciones" type="checkbox" required><span>Click para aceptar nuestros <a href="#">Terminos y Condiciones (leer aqui).</a></span>
+        <input class="footer-form-input"  type="submit" value="Subscribir!">
+      </form>
+    </div>
+  </footer> 
+  <!-- SCRIP BOOSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

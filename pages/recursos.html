@@ -16,9 +16,8 @@
 </head>
 
 <body>
-
   <header>  
-    <nav class="navbar navbar-expand-lg  sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="../asset/img/favicon.jpg" alt="logo. Imagen de un avion" class="d-inline-block align-text-top headerIcon">
@@ -43,19 +42,19 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="recursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recursos</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="recursos.html">Recurso 1</a></li>
-                  <li><a class="dropdown-item" href="recursos.html">Recurso 2</a></li>
-                  <li><a class="dropdown-item" href="recursos.html">Recurso 3</a></li>
-                  <li><a class="dropdown-item" href="recursos.html">Recurso 4</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#uno">Manifestación de interés</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#dos">¿Como conseguir trabajo?</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#tres">¿Que es el NIF?</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#cuatro">¿Que es el NISS y como conseguirlo?</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="viajecitos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Viajecitos</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="viajecitos.html">Viaje 1</a></li>
-                  <li><a class="dropdown-item" href="viajecitos.html">Viaje 2</a></li>
-                  <li><a class="dropdown-item" href="viajecitos.html">Viaje 3</a></li>
-                  <li><a class="dropdown-item" href="viajecitos.html">Viaje 4</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#uno">Algarve</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#dos">Lisboa</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#tres">Porto</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#cuatro">Alentejo</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -69,84 +68,83 @@
   </header>
 
   <main class="flex">
-    <section>
-      <div class="caratula-div">
-        <img id="animate" src="../asset/img/recursosCero.jpg" alt="imagen de plantas espejadas sobre agua">    
-        <h2 class="caratula-texto">Recursos</h2>
-      </div>
-      <div>
-        <div class="recursos-indice">
-          <a href="#uno"><h2>Manifestación de interés</h2></a>
-          <p>La Manifestación de Interés o “Manifestação de Interesse” es el nombre que se le da a la solicitud de residencia (para tener los mismos derechos que un portugues) para extranjeros en Portugal.</p>
-        </div>
-        <div class="recursos-indice">
-          <a href="#dos"><h2>¿Como consigo trabajo?</h2></a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa numquam ab facere ipsum? Suscipit totam iusto nisi tempora expedita.</p> 
-        </div>
-        <div class="recursos-indice">
-          <a href="#tres"><h2>¿Que es el NIF?</h2></a>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vero nam accusantium animi facilis perspiciatis cum aperiam ipsam quos voluptatibus.</p>
-        </div>
-        <div class="recursos-indice">
-          <a href="#cuatro"><h2>¿Que es el NISS y como conseguirlo?</h2></a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsa numquam ab facere ipsum? Suscipit totam iusto nisi tempora expedita.</p> 
-        </div>
-      </div>
+    <section class="caratula">
+      <img src="../asset/img/recursosCero.jpg" alt="imagen de plantas espejadas sobre agua">    
+      <h2>Recursos</h2>
     </section>
-    <section class=" recursos-articulos">
+    <section class="recursosConteiner" >
+      <div class="recursosConteiner__card ">
+        <a href="#uno"><h2>Manifestación de interés</h2>
+        <p>La Manifestación de Interés o “Manifestação de Interesse” es el nombre que se le da a la solicitud de residen...</p></a>
+      </div>
+      <div class="recursosConteiner__card ">
+        <a href="#dos"><h2>¿Como consigo trabajo?</h2>
+        <p>Portugal se ha convertido en un destino atractivo para los latinos que desean emigrar debido a sus paisaj...</p></a>
+      </div>
+     <div class="recursosConteiner__card ">
+         <a href="#tres"><h2>¿Que es el NIF?</h2>
+        <p>El NIF es un requisito esencial para trabajar legalmente en Portugal, es el equivalente al CUIL/CUIT de Argent...</p></a>
+      </div>
+      <div class="recursosConteiner__card ">
+        <a href="#cuatro"><h2>¿Que es el NISS y como conseguirlo?</h2>
+        <p>Las personas extranjeras que no tienen un Número de Identificación de Seguro Social (NISS) pueden solicitar el NISS en lín...</p></a>
+      </div> 
+    </section>
+    <section>
       <article class="recursos-article"> 
         <h2 id="uno">Manifestación de interés</h2>
-        <img class="recursos-img float-div-right" src="../asset/img/recursosUno.jpg" alt="foto que muestra de izquierda a derecha un acopio de sal, junto una calle secundaria con un ciclista dirigiendose hacia el frente y junto a ello unas vias de ferrocarril">
+        
+        <p><img class="recursos-img float--right" src="../asset/img/recursosUno.jpg" alt="foto que muestra de izquierda a derecha un acopio de sal, junto una calle secundaria con un ciclista dirigiendose hacia el frente y junto a ello unas vias de ferrocarril">
+        La Manifestación de Interés o “Manifestação de Interesse” es el nombre que se le da a la solicitud de residencia (para tener los mismos derechos que un portugues) para extranjeros en Portugal. Es un trámite de dos etapas, se inicia online y se termina con una cita en las oficinas del Serviço de Estrangeiros e Fronteiras (de aqui en adelante SEF) que es el servicio de exterior y fronteras. La primera residencia es por un término de 2 años y la segunda por 3 años llegado a ese punto y con unos requisitos mínimos podremos solicitar la ciudadanía portuguesa de forma permanente.</p>
         <p>
-          La Manifestación de Interés o “Manifestação de Interesse” es el nombre que se le da a la solicitud de residencia (para tener los mismos derechos que un portugues) para extranjeros en Portugal. Es un trámite de dos etapas, se inicia online y se termina con una cita en las oficinas del Serviço de Estrangeiros e Fronteiras (de aqui en adelante SEF) que es el servicio de exterior y fronteras. La primera residencia es por un término de 2 años y la segunda por 3 años llegado a ese punto y con unos requisitos mínimos podremos solicitar la ciudadanía portuguesa de forma permanente..
-          Según la información oficial disponible en https://eportugal.gov.pt/servicos/apresentar-a-manifestacao-de-interesse podemos conocer los requisitos para poder acceder a este permiso. 
-          
-          ¿Cuáles son los documentos y requisitos para presentar la manifestación de interés?
-          
-          Pasaporte u otro documento de viaje válido
-          Básicamente para el común de los mortales es eso, tener un pasaporte válido.
+        Según la información <a href="https://eportugal.gov.pt/servicos/apresentar-a-manifestacao-de-interesse" target="_blanck">oficial disponible</a> en podemos conocer los requisitos para poder acceder a este permiso. 
+        </p>
+        <p>¿Cuáles son los documentos y requisitos para presentar la manifestación de interés?</p>
+        <ol>
+          <li class="elemento-1">Pasaporte u otro documento de viaje válido</li>
+          <li class="elemento-2">Básicamente para el común de los mortales es eso, tener un pasaporte  válido.
           Prueba de entrada regular en territorio portugués (posesión de visa válida, cuando sea necesaria, o entrada en Portugal dentro del período de exención de visa)
           Bueno aqui hay dos cosas entrada y regular, es decir que el Gobierno portugues se haya notificado de tu entrada y que la misma haya sido legal.
-          Notificación de ingreso a Portugal.
-          Básicamente si entramos al espacio Schenguen por Portugal no tenemos que hacer nada, el sello del pasaporte da fe; si nos hospedamos en un alojamiento turistico oficial dentro de los tres dias habiles tampoco, pues ellos hacen el tramite; si tenomos una visa portuguesa para mas de seis meses de estadia, tampoco tenemos que hacer algo. Para otros casos puede corroborar esta informacion y buscar su caso en este hermoso PDF del SEF aqui https://www.sef.pt/pt/Documents/DeclardeEntrada_PT.pdf
-          Y de forma legal.
-          Cuando hablamos de forma legal es justamente eso, que seas legal, por ejemplo con la visa de turista de toda la vida ya basta.  https://eportugal.gov.pt/migrantes-viver-e-trabalhar-em-portugal/migrantes-vistos-e-autorizacoes-para-entrar-e-viver-em-portugal
-          Prueba de medios de subsistencia, según lo previsto en la Ordenanza nº 1563/2007, de 11/12
-          Aca nos van a pedir tener un respaldo de tres salarios mínimos de Portugal, lo podemos demostrar con un extracto bancario o con el límite de nuestra tarjeta de credito.  
-          Certificado de antecedentes penales del país de origen.
-          Esto lo podes pedir en el caso de Argentina de forma online y legalizarlo via Trámites a Distancia (TAD) con apostilla de la Haya. A algunos se los aceptan sin trauccion, a otros se la piden y la embajada de Argentina en Portugal hace un tramite que se llama Certificacion Colsular que te cobran 40Euros y te hacen una especie de traduccion.
-          Certificado de antecedentes penales del país en el que ha vivido durante más de un año (cuando no sea Portugal)
-          
-          
-          Autorización para consultar los antecedentes penales portugueses por parte del SEF
-          Aca no te molestes en hacer nada, se autoriza en la cita con el SEF.
-          Documento que acredite que tienes alojamiento.
-          Varias cosas, contrato de alquiler, atestado de morada o comprovativo de morada del portal de finanzas. Ya vas a ver cual es el portal de finanzas.  
-          Justificante de alta y situación de regularización en la Seguridad Social, salvo promesa de contrato de trabajo
-          Para eso nos tenemos que estar registrados en la Seguraca Social y nos den el numero NISS. Para obtenerlo hay dos vías que el empleador lo haga o que nosotros lo hagamos, para esto último debemos hacernos una especie de monotributo, el cual se conoce como recibos verdes. 
-          Comprobante de registro ante la Administración Tributaria
-          Esto lo sacamos del portal de finanzas. Para poder hacer esto y para estar habilitados a tener trabajo tenemos que tener nuestro número fiscal, el NIF. Es el equivalente al cuil. 
-          Contrato de trabajo o documento emitido de conformidad con al. a) el apartado 2 del artículo 88 de la Ley 23/2007, de 4 de julio; o Promesa de contrato de trabajo celebrado conforme a la Ley; O
-          Documento que acredite que ha constituido una sociedad en los términos de la ley, declarado el inicio de actividad ante la Administración Tributaria y la Seguridad Social como persona física; O Contrato de prestación de servicios para el ejercicio de una profesión liberal y declaración del colegio profesional que acredite la inscripción respectiva (cuando corresponda)
-          Cualificación para ejercer una actividad profesional independiente (cuando proceda)
-          
-          Ya presente todo, Y ahora que?
-            Bueno, esperar….
-          Me respondieron del SEF.
-          Parabens! ya tenes el turno? bueno, te enviaron un mensage interno por  la pagina del SEF. Relaja y espera el segundo.
-          Cambiaste de trabajo? cambiaste de casa? 
-          No te preocupe, actualiza los pelpas y lleva los ultimos que tengas.
-           
-        </p>
-          
+          </li>
+          <ol>
+            <li>Notificación de ingreso a Portugal.
+            Básicamente si entramos al espacio Schenguen por Portugal no tenemos que hacer nada, el sello del pasaporte da fe; si nos hospedamos en un alojamiento turistico oficial dentro de los tres dias habiles tampoco, pues ellos hacen el tramite; si tenomos una visa portuguesa para mas de seis meses de estadia, tampoco tenemos que hacer algo. Para otros casos puede corroborar esta informacion y buscar su caso en este hermoso PDF del SEF aqui https://www.sef.pt/pt/Documents/DeclardeEntrada_PT.pdf</li>
+            <li>Y de forma legal.
+            Cuando hablamos de forma legal es justamente eso, que seas legal, por ejemplo con la visa de turista de toda la vida ya basta.  https://eportugal.gov.pt/migrantes-viver-e-trabalhar-em-portugal/migrantes-vistos-e-autorizacoes-para-entrar-e-viver-em-portugal</li>
+          </ol>  
+          <li class="elemento-3">Prueba de medios de subsistencia, según lo previsto en la Ordenanza nº 1563/2007, de 11/12
+          Aca nos van a pedir tener un respaldo de tres salarios mínimos de Portugal, lo podemos demostrar con un extracto bancario o con el límite de nuestra tarjeta de credito</li>
+          <li class="elemento-4">Certificado de antecedentes penales del país de origen.
+          Esto lo podes pedir en el caso de Argentina de forma online y legalizarlo via Trámites a Distancia (TAD) con apostilla de la Haya. A algunos se los aceptan sin trauccion, a otros se la piden y la embajada de Argentina en Portugal hace un tramite que se llama Certificacion Colsular que te cobran 40Euros y te hacen una especie de traduccion.</li>
+          <li class="elemento-e">Certificado de antecedentes penales del país en el que ha vivido durante más de un año (cuando no sea Portugal)</li>
+          <li class="elemento-f">Autorización para consultar los antecedentes penales portugueses por parte del SEF
+            Aca no te molestes en hacer nada, se autoriza en la cita con el SEF.</li>
+          <li class="elemento-g">Documento que acredite que tienes alojamiento.
+          Varias cosas, contrato de alquiler, atestado de morada o comprovativo de morada del portal de finanzas. Ya vas a ver cual es el portal de finanzas.  </li>
+          <li class="elemento-h">Justificante de alta y situación de regularización en la Seguridad Social, salvo promesa de contrato de trabajo
+          Para eso nos tenemos que estar registrados en la Seguraca Social y nos den el numero NISS. Para obtenerlo hay dos vías que el empleador lo haga o que nosotros lo hagamos, para esto último debemos hacernos una especie de monotributo, el cual se conoce como recibos verdes. </li>
+          <li class="elemento-i">Comprobante de registro ante la Administración Tributaria
+          Esto lo sacamos del portal de finanzas. Para poder hacer esto y para estar habilitados a tener trabajo tenemos que tener nuestro número fiscal, el NIF. Es el equivalente al cuil. </li>
+          <li class="elemento-j">Contrato de trabajo o documento emitido de conformidad con al. a) el apartado 2 del artículo 88 de la Ley 23/2007, de 4 de julio; o Promesa de contrato de trabajo celebrado conforme a la Ley; O
+          Documento que acredite que ha constituido una sociedad en los términos de la ley, declarado el inicio de actividad ante la Administración Tributaria y la Seguridad Social como persona física; O Contrato de prestación de servicios para el ejercicio de una profesión liberal y declaración del colegio profesional que acredite la inscripción respectiva (cuando corresponda)</li>
+          <li class="elemento-k">Cualificación para ejercer una actividad profesional independiente (cuando proceda)</li>
+        </ol>
       </article>
 
       <article class="recursos-article">
         <h2 id="dos">¿Como consigo trabajo?</h2>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus accusantium, cum magnam laborum eum id suscipit laboriosam dolorem rem nisi, enim dolore officiis nihil earum, explicabo quae modi similique rerum in labore repellat quam illo! Et eaque libero cum quas ab cupiditate beatae iure amet maiores, ullam quia culpa, nobis mollitia omnis nostrum neque, ut nihil obcaecati. Repellat, mollitia ipsam. Vel libero, ut consequuntur officia nihil et ipsum quis quibusdam natus obcaecati non animi sunt earum! Modi dolorem exercitationem obcaecati, maiores inventore possimus, eum delectus doloribus illum rerum laudantium aliquid fugiat earum explicabo? Fugiat recusandae quas deserunt perspiciatis veritatis libero, illum odit molestias architecto, tempore quibusdam minus ad consequatur vel dolores, repellendus ratione atque laborum adipisci! Omnis officiis vel at rem explicabo neque sint voluptate, illum possimus repellendus soluta exercitationem alias asperiores sit nihil ipsum excepturi commodi. Nemo ratione sequi animi iure amet.
-        <img class="recursos-img float-div" src="../asset/img/recursosDos.jpg" alt="restos de una soga nautica y una botella (en primer plano) tirados en una playa delimitada por barrancos de piedra "> </p>
+        <h3>¿Qué Necesito Para Trabajar en Portugal?</h3>
+        <p>Portugal se ha convertido en un destino atractivo para los latinos que desean emigrar debido a sus paisajes, seguridad y oportunidades laborales. Aquí encontrarás todo lo que necesitas para comenzar tu aventura laboral en este hermoso país.</p>
+        <h3>NIF: Número de Identificación Fiscal</h3>
+        <p>El NIF es un requisito esencial para trabajar legalmente en Portugal. Sin este número único de 9 cifras, no podrás firmar un contrato de trabajo ni realizar trámites fiscales. Aprende cómo obtenerlo y su importancia en tus trámites subsiguientes.</p>
+        <h3>NISS: Número de Seguridad Social</h3>
+        <p>El NISS es vital para contribuir al sistema de seguridad social y acceder a beneficios como pensiones y asignaciones familiares. Descubre por qué es necesario para firmar contratos de trabajo y cómo obtenerlo de manera online.</p>
+        <h3>Visa y Manifestación de Interés</h3>
+        <p>Aunque es posible ser contratado con NIF y NISS, muchas empresas prefieren candidatos con visa de trabajo, manifestación de interés o residencia europea. Explora las opciones disponibles y cómo obtenerlas para facilitar tu búsqueda de empleo.</p>
         
+        <p>Con estos recursos y consejos, estarás mejor preparado/a para iniciar tu búsqueda de trabajo y dar los primeros pasos hacia una nueva vida laboral en Portugal. ¡Éxito en tu aventura!</p>
+
+        <img class="recursos-img float-div" src="../asset/img/recursosDos.jpg" alt="restos de una soga nautica y una botella (en primer plano) tirados en una playa delimitada por barrancos de piedra ">
       </article>
       
       <article class="recursos-article clearfix"> 
@@ -154,58 +152,93 @@
         <h2 id="tres">¿Que es el NIF?</h2>
         <img class="recursos-img float-div-right" src="../asset/img/recursosUno.jpg" alt="foto que muestra de izquierda a derecha un acopio de sal, junto una calle secundaria con un ciclista dirigiendose hacia el frente y junto a ello unas vias de ferrocarril">
         <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium fugiat deleniti quas alias tempora fuga velit eos officiis nesciunt itaque mollitia corporis exercitationem nihil consequatur ratione, molestiae, non iste earum neque quidem ea quis quo a. Molestias, corporis! Ex nesciunt ducimus, perspiciatis corrupti officiis temporibus excepturi, soluta dicta recusandae quidem officia. Sapiente doloribus cupiditate saepe, nostrum soluta perferendis tempora assumenda voluptates maiores nam facere consequatur blanditiis eos eum non optio? Reprehenderit unde beatae blanditiis accusantium autem repellat optio sapiente dolor culpa earum itaque minus iusto repellendus, voluptate vero, facilis perspiciatis ullam. Sequi tempora qui laudantium quae dolorem a ipsa culpa, omnis, deleniti, distinctio saepe deserunt voluptate ea? Ea quod perferendis maxime rem ad, id nisi quas obcaecati illum molestias et accusantium vero at quibusdam eum, dolorum tenetur eveniet possimus veritatis ipsum magni eius delectus. Rem sit veniam explicabo doloremque quibusdam possimus sequi quisquam? 
+        El NIF es un requisito esencial para trabajar legalmente en Portugal, es el equivalente al CUIL/CUIT de Argentina.  
         </p>
-          
+        <h3>Solicitar el Número de Identificación Fiscal (NIF)</h3>
+        <p>Una persona extranjera, residente o no residente en Portugal, que trabaje y pague impuestos en Portugal debe tener un Número de Identificación Fiscal (NIF).
+        En el caso de niños y jóvenes, el NIF es necesario para gastos de salud y educación, por ejemplo, que los padres pueden incluir en su declaración del IRPF (IRPF).
+        </p>
+        <h3>Documentos Necesarios</h3>
+        <p>Para solicitar el NIF necesitas los siguientes documentos:</p>
+        <ul>
+          <li>Residente en Portugal: documento de identificación civil del país de origen o pasaporte* y permiso de residencia</li>
+          <li>No residente en Portugal - documento de identidad o pasaporte* y tener un representante fiscal (individual o colectivo) que resida en territorio nacional</li>
+        </ul>
+        <i>* Si presenta su pasaporte, también debe presentar su visado para entrar en Portugal o en el Espacio Schengen.</i>
+        <h3>Cómo solicitar el NIF</h3>
+        <p>Por la propia persona</p> 
+        <ul><li>en los Servicios Financieros - concertar una cita para la atención presencial a través del Call Center (CAT) - 217 206 707, de lunes a viernes, de 9 a 19 horas</li></ul>
+        <p>Por el representante</p>
+        <ul><li>en el ventanilla electrónica del portal de Finanzas, si la persona a la que solicita el NIF reside fuera de la Unión Europea, en Noruega, Islandia y Liechtenstein.</li></ul>       
+
       </article>
       <article  class="recursos-article clearfix"> 
         <div class="clearfix"></div>
         <h2 id="cuatro">¿Que es el NISS y como conseguirlo?</h2>
         <img class="recursos-img float-div-right" src="../asset/img/recursosUno.jpg" alt="foto que muestra de izquierda a derecha un acopio de sal, junto una calle secundaria con un ciclista dirigiendose hacia el frente y junto a ello unas vias de ferrocarril">
+
         <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium fugiat deleniti quas alias tempora fuga velit eos officiis nesciunt itaque mollitia corporis exercitationem nihil consequatur ratione, molestiae, non iste earum neque quidem ea quis quo a. Molestias, corporis! Ex nesciunt ducimus, perspiciatis corrupti officiis temporibus excepturi, soluta dicta recusandae quidem officia. Sapiente doloribus cupiditate saepe, nostrum soluta perferendis tempora assumenda voluptates maiores nam facere consequatur blanditiis eos eum non optio? Reprehenderit unde beatae blanditiis accusantium autem repellat optio sapiente dolor culpa earum itaque minus iusto repellendus, voluptate vero, facilis perspiciatis ullam. Sequi tempora qui laudantium quae dolorem a ipsa culpa, omnis, deleniti, distinctio saepe deserunt voluptate ea? Ea quod perferendis maxime rem ad, id nisi quas obcaecati illum molestias et accusantium vero at quibusdam eum, dolorum tenetur eveniet possimus veritatis ipsum magni eius delectus. Rem sit veniam explicabo doloremque quibusdam possimus sequi quisquam? 
-        </p>
+        Las personas extranjeras que no tienen un Número de Identificación de Seguro Social (NISS) pueden solicitar el NISS en línea. Si comienzas a trabajar como empleado, el empleador también puede solicitar el NISS con el Seguro Social.
+        También es posible solicitar el NISS para niños y jóvenes.</p>
+        <h3>Documentos requeridos</h3>
+        <p>Para solicitar el NISS, usted debe:</p> 
+        <ul><li>rellenar el <a href="https://www.seg-social.pt/pedido-de-formulario-niss-cidadao-estrangeiro">formulario disponible en el portal de la Seguridad Social</a></li></ul>
+        <p>Se aceptan los siguientes documentos:</p>
+        <p>Personas de la Unión Europea, del Estado Económico Europeo o de Suiza</p>
+        <ul><li>Documento de identificación civil del país de origen</li></ul> 
+        <p>Nacionales de terceros países</p>
+        <ul>
+          <li>Pasaporte</li>
+          <li>Permiso de residencia</li>
+          <li>Permiso de residencia (temporal o permanente)</li>
+          <li>Otro documento de identificación civil del país de origen</li>
+        </ul>
+        <h3>Otro documento de identificación civil del país de origen</h3>
+        <p>A través de Internet</p>
+        <ol>
+          <li>Acceder <a href="https://www.seg-social.pt/inicio">al portal de la Seguridad Social</a></li>
+          <li>Selecciona la pestaña "Soy ciudadano"</li>
+          <li>Elija la opción "Número de identificación del Seguro Social (NISS)"</li>
+          <li>Haga clic en <a href="https://www.seg-social.pt/pedido-de-formulario-niss-cidadao-estrangeiro">"Formulario de solicitud de número de identificación de seguro social".</a> </li>
+        </ol>
           
       </article>
   
     </section>
   </main>
 
-  <footer>
-    <div class="footer-div-brand div-size-30">
-      <img class="headerIcon" src="../asset/img/favicon.jpg">
-      <div class="footer-div-brand-texto">
-        <h3>De viaje en Portugal</h3>
+  <footer class="footer">
+    <div class="footer__brand">
+      <img class="footer__brand__icon" src="../asset/img/favicon.jpg">
+      <div class="footer__brand__text">
+        <h3>Emigrar a Portugal</h3>
         <p>&copy; Copyright 2024</p>
       </div>
     </div>
-
-    <div class="footer-div footer-social div-size-20">
+    <div class="footer__social">
       <h4>Social</h4>
       <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Youtube</a></li>
+        <li><a target="_blank" href="https://twitter.com/" href="#">X <span style="font-size: smaller;">(Twitter)</span></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/" href="#">Instagram</a></li>
+        <li><a target="_blank" href="https://www.facebook.com/" href="#">Facebook</a></li>
       </ul>
     </div>
-
-    <div class="footer-div div-size-20 footer-contacto">
+    <div class="footer__contacto">
       <h4>Contacto</h4>
       <ul>
-        <li><a href="pages/contacto.html#form">Email</a></li>
-        <li><a href="pages/contacto.html#form">Donaciones</a></li>
-        <li><a href="pages/laIdea.html">Sobre mi</a></li>
+        <li><a href="contacto.html#form">Email</a></li>
+        <li><a href="contacto.html#form">Donaciones</a></li>
+        <li><a href="laIdea.html">Sobre mi</a></li>
       </ul>
     </div>
-
-    <div class="footer-div div-size-30">
-      <h4 class="footer-div-subscribe-cont">Subscribite a nuestro Newsletter</h4>
+    <div class="footer__subscribe">
+      <h4>Subscribite a nuestro Newsletter</h4>
       <form action="" method="post">
-        <input class="footer-form-input" type="email" required placeholder="Ingresa tu email" id="Newsletter-email">
+        <input type="email" required placeholder="Ingresa tu email" id="Newsletter-email">
         <p >Mantenete al dia y se un experto en emigrar. 
         Dale a Subscribir!</p>
-        <input class="terminosYcondiciones" type="checkbox" required><span>Click para aceptar nuestros <a href="#">Terminos y Condiciones (leer aqui).</a></span>
-        <input class="footer-form-input"  type="submit" value="Subscribir!">
+        <input class="terminosYcondiciones" type="checkbox" required><span>Click para aceptar nuestros <a class="excluir" href="#">Terminos y Condiciones (leer aqui).</a></span>
+        <input  type="submit" value="Subscribir!">
       </form>
     </div>
   </footer> 

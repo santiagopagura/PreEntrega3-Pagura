@@ -283,7 +283,7 @@ nav {
 .conteiner {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: stretch;
   width: 90%;
   flex-wrap: wrap;
   &__card {
@@ -296,6 +296,9 @@ nav {
     border-radius: 10px;
     border: #3EABC0 1px solid;
     box-shadow: #3EABC0 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   &__texto {
     /* display: inline-block; */
@@ -313,14 +316,24 @@ nav {
   &__contenedor {
     display: flex;
     overflow-x: auto;
+    margin: 15px 5px;
     &__card {
       width: 25%;
-      min-width: 150px;
+      min-width: 175px;
       margin: 1%;
-      background-color: rgb(152, 217, 217);     
+      background-color: #98d9d9;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: #3eaac03a 0px 0px 5px;           
       img {
         width: 100%;
         object-fit: cover;
+      }
+      h4 {
+        min-height: 85px;
+      }
+      p {
+        text-align: justify;
       }
     }
   }
@@ -491,47 +504,53 @@ a {
   float: right;
   margin: 0 0 20px 20px;
 }
-.float-inline-end {
-  float:inline-end;
-}
+
 
 /* Viajecito */
-.viajecito-div-link {
-  margin-left: 10px;
+.viajecito {
+  &__card {
+    background-color: #72b1c2;
+    box-shadow: #79898cbb 0 0 1px ;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    &__img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      }
+    &__texto {
+      margin-left: 30px;
+      h2 {
+        font-weight: normal;
+        background-color: #87c2d2;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
 }
 
-.viajecito-div-item {
-  margin: 15px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.viajecito-div-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.viajecito-img-article {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
 .viajecito-article {
   margin-top: 70px;
 }
+.carousel {
+  width: 400px;
+  height: 300px;
+}
 
 .carousel-item {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 300px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* La Idea */
 

@@ -195,7 +195,7 @@ nav div a h1 {
 .conteiner {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: stretch;
   width: 90%;
   flex-wrap: wrap;
 }
@@ -209,6 +209,9 @@ nav div a h1 {
   border-radius: 10px;
   border: #3EABC0 1px solid;
   box-shadow: #3EABC0 0px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .conteiner__texto {
   /* display: inline-block; */
@@ -225,16 +228,26 @@ nav div a h1 {
 .c1__contenedor {
   display: flex;
   overflow-x: auto;
+  margin: 15px 5px;
 }
 .c1__contenedor__card {
   width: 25%;
-  min-width: 150px;
+  min-width: 175px;
   margin: 1%;
-  background-color: rgb(152, 217, 217);
+  background-color: #98d9d9;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(62, 170, 192, 0.2274509804) 0px 0px 5px;
 }
 .c1__contenedor__card img {
   width: 100%;
   object-fit: cover;
+}
+.c1__contenedor__card h4 {
+  min-height: 85px;
+}
+.c1__contenedor__card p {
+  text-align: justify;
 }
 
 .p1 {
@@ -394,42 +407,43 @@ a {
   margin: 0 0 20px 20px;
 }
 
-.float-inline-end {
-  float: inline-end;
-}
-
 /* Viajecito */
-.viajecito-div-link {
-  margin-left: 10px;
-}
-
-.viajecito-div-item {
-  margin: 15px;
+.viajecito__card {
+  background-color: #72b1c2;
+  box-shadow: rgba(121, 137, 140, 0.7333333333) 0 0 1px;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px 0;
 }
-
-.viajecito-div-img {
-  width: 100px;
-  height: 100px;
+.viajecito__card__img {
+  width: 130px;
+  height: 130px;
   object-fit: cover;
 }
-
-.viajecito-img-article {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.viajecito__card__texto {
+  margin-left: 30px;
+}
+.viajecito__card__texto h2 {
+  font-weight: normal;
+  background-color: #87c2d2;
+}
+.viajecito__card__texto p {
+  margin: 0;
 }
 
 .viajecito-article {
   margin-top: 70px;
 }
 
-.carousel-item {
-  width: 300px;
-  height: 200px;
+.carousel {
+  width: 400px;
+  height: 300px;
 }
 
+.carousel-item {
+  width: 100%;
+  height: 300px;
+}
 .carousel-item img {
   width: 100%;
   height: 100%;

@@ -136,8 +136,7 @@ body {
 		width: 60%;
 	}
 	img {
-		width: 40%;
-		object-fit: cover;
+		@include img(40%, auto, cover);
 	}
 
 }

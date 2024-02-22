@@ -4,8 +4,7 @@
     text-align: justify;
   }
   img {
-    width: 250px;
-    object-fit: cover;
+    @include img(250px, auto, cover);
   }
 }
   

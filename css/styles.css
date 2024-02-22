@@ -261,6 +261,7 @@ main {
 }
 .b1__article img {
   width: 40%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -393,8 +394,9 @@ main {
 }
 
 .carousel-item {
-  width: 100%;
+  width: 450px;
   height: 300px;
+  object-fit: auto;
 }
 
 .carousel-item img {
@@ -487,8 +489,8 @@ main {
   text-decoration-line: underline;
 }
 .recursosMain img {
-  height: 250px;
   width: auto;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -539,6 +541,7 @@ label {
 }
 .laidea img {
   width: 250px;
+  height: auto;
   object-fit: cover;
 }
 

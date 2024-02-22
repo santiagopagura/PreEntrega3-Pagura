@@ -1,0 +1,40 @@
+.viajecito {
+  &__card {
+    background-color: #72b1c2;
+    box-shadow: #79898cbb 0 0 1px ;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    &__img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      }
+    &__texto {
+      margin-left: 30px;
+      h2 {
+        font-weight: normal;
+        background-color: #87c2d2;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.viajecito-article {
+  margin-top: 70px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 300px;
+}
+  
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

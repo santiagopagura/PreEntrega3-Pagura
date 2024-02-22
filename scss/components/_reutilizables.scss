@@ -1,0 +1,45 @@
+.caratula {
+  position: relative;
+  margin-bottom: 50px;
+  width: 100%;
+  h2 {
+    @include centrar();
+    text-align: center;
+    background-color: #efececb3;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float--left { 
+  float: left; 
+  margin: 0 20px 20px 0; 
+}
+
+.float--right {
+  float: right;
+  margin: 0 0 20px 20px;
+}

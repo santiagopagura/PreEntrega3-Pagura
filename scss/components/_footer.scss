@@ -1,0 +1,77 @@
+// FOOTER 
+
+.footer {
+    height: auto;
+    background-color: $bg-primario;
+    margin: 50px 0;
+    padding: 15px 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    &__brand {
+      display: flex;
+      align-items: flex-start;
+      width: 35%;
+      min-width: 270px;
+      &__text{
+        margin-left: 15px;
+      }
+      &__icon {
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    &__social, &__contacto {
+      width: 15%;
+      min-width: 120px;
+      ul {
+        padding: 0;
+      }
+    } 
+    &__subscribe {
+      width: 35%;
+      min-width: 270px;
+      form { 
+        span {
+          font-size: smaller;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    } 
+  }
+  
+  .terminosYcondiciones {
+    display: inline-block;
+  }
+  
+  footer {
+    a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #3b3b4f;
+    }
+    a:active {
+      background-color: #3b3b4f;
+      color: $primario;
+      padding: 2px;
+    }
+    .excluir:hover {
+      text-decoration: underline;
+      font-weight: normal;
+      color: #3b3b4f;
+    }
+    .excluir:active {
+      background-color: #3b3b4f;
+      color: $primario;
+      padding: 2px;
+    }
+    li:active {
+      margin: 4px 0;
+      align-items: left;
+    }
+  }
+  

@@ -1,0 +1,38 @@
+.contacto-img {
+  max-height: 250px;
+  width: 45%;
+  object-fit: cover;
+  margin: 15px 15px;
+}
+
+.map-div {
+    margin-top: 50px;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+/* Formulario */
+
+.form {
+  width: 70%;
+  margin: 40px 0;
+  background-color:rgb(185, 241, 254);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+textarea,
+input,
+label,
+select {
+  display: block;
+  font-family: "Raleway", sans-serif;
+}
+
+label {
+  margin: 10px 5px;
+}
+

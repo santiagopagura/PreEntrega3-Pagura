@@ -1,0 +1,57 @@
+/* HEADER */
+
+nav {
+    background-color: $bg-primario;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    div a h1 {
+      margin: 0px;
+    }
+  }
+  
+  .dropdown-menu {
+    background-color: $bg-primario;
+  }
+  
+  .offcanvas.show {
+    .dropdown-menu {
+    background-color: inherit;
+    }
+    .nav-link:hover {
+    transform: none;
+    }
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 3px;
+    &:hover {
+      background-color: $hover-bg;
+      color: #2C5269;
+      transform: scale(1.15);
+      transition: 0.5s;
+    }
+    &:active {
+      background-color: #3b3b4f;
+      color: $primario;
+      padding: 2px;
+    }
+  }
+
+  .headerIcon {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }

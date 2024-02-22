@@ -1,42 +1,17 @@
-/* Reset CSS */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fuente local */
+/* VARIABLES */
+/* FUENTES */
 @font-face {
   font-family: "Raleway";
   src: url("../asset/fonts/Raleway/Raleway-VariableFont_wght.ttf");
 }
-/* General */
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  background-image: url("../asset/background/morocco.png");
-  background-repeat: repeat;
-}
-
-main {
-  width: 95%;
-  padding: 10px;
-  margin: 60px auto 30px;
-  background-color: #DEF0F4;
-  display: grid;
-  grid-template-areas: "a1 a1" "b1 p1" "b2 p2" "c1 c1";
-  grid-template-columns: 1fr 200px;
-  grid-template-rows: auto auto auto auto;
-  gap: 30px;
-  overflow: hidden;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
+/* HEADER */
 /* HEADER */
 nav {
   background-color: #DEF0F4;
@@ -83,6 +58,112 @@ nav div a h1 {
   background-color: #3b3b4f;
   color: #DEF0F4;
   padding: 2px;
+}
+
+.headerIcon {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* FOOTER */
+.footer {
+  height: auto;
+  background-color: #DEF0F4;
+  margin: 50px 0;
+  padding: 15px 30px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.footer__brand {
+  display: flex;
+  align-items: flex-start;
+  width: 35%;
+  min-width: 270px;
+}
+.footer__brand__text {
+  margin-left: 15px;
+}
+.footer__brand__icon {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.footer__social, .footer__contacto {
+  width: 15%;
+  min-width: 120px;
+}
+.footer__social ul, .footer__contacto ul {
+  padding: 0;
+}
+.footer__subscribe {
+  width: 35%;
+  min-width: 270px;
+}
+.footer__subscribe form span {
+  font-size: smaller;
+}
+.footer__subscribe form p {
+  margin: 0;
+}
+
+.terminosYcondiciones {
+  display: inline-block;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #3b3b4f;
+}
+footer a:active {
+  background-color: #3b3b4f;
+  color: #DEF0F4;
+  padding: 2px;
+}
+footer .excluir:hover {
+  text-decoration: underline;
+  font-weight: normal;
+  color: #3b3b4f;
+}
+footer .excluir:active {
+  background-color: #3b3b4f;
+  color: #DEF0F4;
+  padding: 2px;
+}
+footer li:active {
+  margin: 4px 0;
+  align-items: left;
+}
+
+/* INDEX */
+/* General */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background-image: url("../asset/background/morocco.png");
+  background-repeat: repeat;
+}
+
+main {
+  width: 95%;
+  padding: 10px;
+  margin: 60px auto 30px;
+  background-color: #DEF0F4;
+  display: grid;
+  grid-template-areas: "a1 a1" "b1 p1" "b2 p2" "c1 c1";
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: auto auto auto auto;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .a1 {
@@ -214,7 +295,6 @@ nav div a h1 {
   justify-content: space-between;
 }
 .conteiner__texto {
-  /* display: inline-block; */
   width: 100%;
 }
 .conteiner img {
@@ -250,6 +330,21 @@ nav div a h1 {
   text-align: justify;
 }
 
+.elemento-oculto {
+  display: none;
+}
+
+.button--submit {
+  border-radius: 2px;
+  background-color: #3b3b4f;
+  color: white;
+  margin: 15px;
+}
+.button--submit:hover {
+  background-color: #4f4f53;
+}
+
+/* PUBLICIDAD */
 .p1 {
   grid-area: p1;
 }
@@ -271,143 +366,7 @@ nav div a h1 {
   height: 200px;
 }
 
-.footer {
-  height: auto;
-  background-color: #DEF0F4;
-  margin: 50px 0;
-  padding: 15px 30px 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-.footer__brand {
-  display: flex;
-  align-items: flex-start;
-  width: 35%;
-  min-width: 270px;
-}
-.footer__brand__text {
-  margin-left: 15px;
-}
-.footer__brand__icon {
-  width: 100px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.footer__social, .footer__contacto {
-  width: 15%;
-  min-width: 120px;
-}
-.footer__social ul, .footer__contacto ul {
-  padding: 0;
-}
-.footer__subscribe {
-  width: 35%;
-  min-width: 270px;
-}
-.footer__subscribe form span {
-  font-size: smaller;
-}
-.footer__subscribe form p {
-  margin: 0;
-}
-
-.terminosYcondiciones {
-  display: inline-block;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  font-weight: bold;
-  color: #3b3b4f;
-}
-footer a:active {
-  background-color: #3b3b4f;
-  color: #DEF0F4;
-  padding: 2px;
-}
-footer .excluir:hover {
-  text-decoration: underline;
-  font-weight: normal;
-  color: #3b3b4f;
-}
-footer .excluir:active {
-  background-color: #3b3b4f;
-  color: #DEF0F4;
-  padding: 2px;
-}
-footer li:active {
-  margin: 4px 0;
-  align-items: left;
-}
-
-.headerIcon, .brand__icon {
-  width: 100px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.button--submit {
-  border-radius: 2px;
-  background-color: #3b3b4f;
-  color: white;
-  margin: 15px;
-}
-.button--submit:hover {
-  background-color: #4f4f53;
-}
-
-.caratula {
-  position: relative;
-  margin-bottom: 50px;
-  width: 100%;
-}
-.caratula h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: rgba(239, 236, 236, 0.7019607843);
-  padding: 20px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-.caratula img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-ul, li, a {
-  list-style: none;
-  text-decoration: none;
-}
-
-a {
-  margin: 0px;
-  padding: 0px;
-  color: black;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.float--left {
-  float: left;
-  margin: 0 20px 20px 0;
-}
-
-.float--right {
-  float: right;
-  margin: 0 0 20px 20px;
-}
-
-/* Viajecito */
+/* VIAJECITO */
 .viajecito__card {
   background-color: #72b1c2;
   box-shadow: rgba(121, 137, 140, 0.7333333333) 0 0 1px;
@@ -446,19 +405,7 @@ a {
   object-fit: cover;
 }
 
-/* La Idea */
-.laidea {
-  margin: 15px;
-}
-.laidea p {
-  text-align: justify;
-}
-.laidea img {
-  width: 250px;
-  object-fit: cover;
-}
-
-/* Recursos */
+/* RECURSOS */
 .recursosConteiner {
   display: flex;
   flex-direction: column;
@@ -547,12 +494,21 @@ a {
   object-fit: cover;
 }
 
-/* Contacto */
+/* CONTACTO */
 .contacto-img {
   max-height: 250px;
   width: 45%;
   object-fit: cover;
   margin: 15px 15px;
+}
+
+.map-div {
+  margin-top: 50px;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
 }
 
 /* Formulario */
@@ -576,19 +532,19 @@ label {
   margin: 10px 5px;
 }
 
-.map-div {
-  margin-top: 50px;
+/* LA IDEA */
+.laidea {
+  margin: 15px;
+}
+.laidea p {
+  text-align: justify;
+}
+.laidea img {
+  width: 250px;
+  object-fit: cover;
 }
 
-iframe {
-  width: 400px;
-  height: 300px;
-}
-
-.elemento-oculto {
-  display: none;
-}
-
+/* MEDIA QUERIES */
 @media screen and (max-width: 750px) {
   main {
     width: 95%;
@@ -810,6 +766,55 @@ iframe {
     height: 100%;
     object-fit: cover;
   }
+}
+/* ELEMENTOS REUTILIZABLES */
+.caratula {
+  position: relative;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.caratula h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(239, 236, 236, 0.7019607843);
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.caratula img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float--left {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.float--right {
+  float: right;
+  margin: 0 0 20px 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

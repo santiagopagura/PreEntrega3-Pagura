@@ -5,13 +5,11 @@
   box-sizing: border-box;
 }
 
-/* VARIABLES */
 /* FUENTES */
 @font-face {
   font-family: "Raleway";
   src: url("../asset/fonts/Raleway/Raleway-VariableFont_wght.ttf");
 }
-/* HEADER */
 /* HEADER */
 nav {
   background-color: #DEF0F4;

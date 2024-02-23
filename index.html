@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- BOOSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+  <!-- AOS ANIMACION-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- ESTILO-->
   <link rel="stylesheet" href="css/styles.css" />
 
@@ -75,7 +76,7 @@
   <main>
     <section class="a1">
       <article class="portada">
-        <div class="portada__animate">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="portada__animate">
           <h2>¡Animate!</h2>
           <p>
             A vivir una aventura única! Encontrate en Portugal y encontra un nuevo mundo de oportunidades, cultura y experiencias inolvidables. ¡Animate a hacia lo desconocido y hacé realidad tus sueños de vivir una vida diferente! 
@@ -279,6 +280,10 @@
       </form>
     </div>
   </footer>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- SCRIP BOOSTRAP -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

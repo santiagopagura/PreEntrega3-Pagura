@@ -9,7 +9,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0 15px 10px 0px#5e5940, 0 -15px 10px 0px #5e5940;
     &__brand {
       display: flex;
@@ -21,8 +20,6 @@
       }
       &__icon {
         width: 100px;
-        // border-radius: 50%;
-        // margin-right: 10px;
       }
     }
     &__social, &__contacto {

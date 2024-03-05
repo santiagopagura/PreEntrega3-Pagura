@@ -26,7 +26,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
   // PUBLICIDAD 
   .p1, .p2 {
     background-color: brown;
@@ -34,13 +33,10 @@
     width: 100%;
     height: 150px;
   }
-    
   // INDEX
-  
   .a1 {
     grid-area: a1;
   }
-  
   .portada {
     background-position-x: center;
     &__animate {
@@ -60,7 +56,6 @@
       object-fit: cover;
       margin: 0 0 0 15px;
     }
-  
   }
   
   .b2 {
@@ -86,12 +81,6 @@
   }
 
 }
-  
-  
-  
-  
-  
-  
   
   
 @media screen and (max-width: 593px) {
@@ -136,242 +125,228 @@
 
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  @media screen and (max-width: 440px) {
-    main {
-    grid-template-rows:repeat(4, auto);
-    grid-template-columns:1fr;
-    grid-template-areas:
-    "a1"
-    "b1"
-    "p1"
-    "b2"
-    "p2"
-    "c1";
-    gap: 0;
-    row-gap: 30px;
-    }
-    .p1, .p2 {
-      background-color: brown;
-      color: $secundario;
-      width: 100%;
-      height: 200px;
-      
-    }
-  
-    .p2-span {
-      grid-row: 7 / span 1;
-      width: 100%;
-      height: 200px;
-    }
-    .elemento-oculto {
-      display: flex;
-    }
-    
-    .elemento-visible {
-      display: none;
-    }
-  
-    .accordion-bg {
-      color:#2C5269;
-      --bs-accordion-bg: #98d9d9;   
-    }
-    
-  
-    header {
-      padding: 5px;
-    }
-  
-    main {
-      margin: 60px 0 30px ;
-      width: 100%;
-    }
-    .nav-link:hover {
-      background-color: $hover-bg;
-      color: #2C5269;
-      transform: none;
-      transition: 0.5s;
-    
-    }
-    
-    .nav-link:active {
-      background-color: #3b3b4f;
-      color: $primario;
-      padding: 5px;
-    }
-  
-    .headerIcon {
-      width: 50px;
-      border-radius: 50%;
-      margin-right: 5px;
-    }
-  
-    
-  .portada {
-    background-position-x: center;;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-  
+@media screen and (max-width: 440px) {
+  main {
+  grid-template-rows:repeat(4, auto);
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "a1"
+  "b1"
+  "p1"
+  "b2"
+  "p2"
+  "c1";
+  gap: 0;
+  row-gap: 30px;
   }
-  
-  .portada__animate {
-    width: 80%;
-    padding: 5px;
-    border-radius: 5px;
-    font-weight: 500;
-    background-color: rgb(239, 236, 236, 0.5);
-    text-align: center;
-  }
-  
-  
-  
-  .portada__animate__sub input {
-    width: 80%;
-    background-color: rgba(132, 132, 132, 0.475);
-    color: white;
-    font-weight: bold;
-    margin: 0 auto;
-    height: 20px;
-    border-style: none;
-    border: 1px solid #3b3b4f;
-    border-radius: 2px;
-  }
-  
-  .portada__animate__sub button {
-    width: 50%;
-    height: 25px;
-    border-radius: 2px;
-    background-color: #3b3b4f;
-    color: white;
-    margin: 15px;
-  }
-  
-  .portada__animate__redes ul {
-    display: flex;
-    justify-content: space-evenly;
+  .p1, .p2 {
+    background-color: brown;
+    color: $secundario;
+    width: 100%;
+    height: 200px;
+    
   }
 
-  .b1__article {
-    display: flex;
-    margin: 15px;
-    div img {
-      width: 40%;
-      object-fit: cover;
-      margin: 0 0 0 15px;
-    }
-  
-  }
-  
-  .b1__article {
-    display: inline-block;
-    text-align: justify;
-    a h2 {
-      display: flex;
-      }
-    div {
-      display: inline-block;
-      div {
-        display: inline-block;
-      }
-      img {
-        margin-left: 0px;
-        @include img(100%, auto, cover);
-      }
-    }	
-  }
-
-  .c1-subscribite {
-    display: none;
-  }
-  
-  footer {
-    height: auto;
-    background-color: $bg-primario;
-    margin: 50px 0;
-    padding: 15px 30px 15px;
-    display: flex;
-    flex-flow: row wrap;
-    font-size: small;
-    text-align: center;
-  }
-  
-  .footer__brand {
-    display: flex;
-    order: 4;  
-  }
-  
-  .div-size-30 {
-    width: 100%;
-    min-width: 125px;
-    margin: 20px 0;
-    
-  }
-  
-  .div-size-20 {
-    width: 49%;
-    min-width: 100px;
-    order: 2;
-    margin: 20px 0;
-    
-  }
-  
-  .footer__subscribe form {
-    text-align: start;
-    margin-top: 15px;
-  
-  }
-  
-  .footer__subscribe input {
-    width: 50%;
-  }
-  
-  .footer__subscribe form p {
-    margin: 0;
-  }
-  
-  
-  footer a:hover {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #3b3b4f;
-  }
-  
-  footer a:active {
-    background-color: #3b3b4f;
-    color: $primario;
-    padding: 2px;
-  }
-  
-  footer li:active {
-    margin: 4px 0;
-    align-items: left;
-  }
-  
-  .float--left, .float--right {
-    float: none;
-    margin: 0; 
-  }
-  .laidea img {
-    width: 100%;
-  }
-  .carousel-item {
+  .p2-span {
+    grid-row: 7 / span 1;
     width: 100%;
     height: 200px;
   }
-  
-  .carousel-item img {
-    @include img(100%, 100%, cover);
+  .elemento-oculto {
+    display: flex;
   }
   
+  .elemento-visible {
+    display: none;
   }
+
+  .accordion-bg {
+    color:#2C5269;
+    --bs-accordion-bg: #98d9d9;   
+  }
+  
+  header {
+    padding: 5px;
+  }
+
+  main {
+    margin: 60px 0 30px ;
+    width: 100%;
+  }
+  .nav-link:hover {
+    background-color: $hover-bg;
+    color: #2C5269;
+    transform: none;
+    transition: 0.5s;
+  
+  }
+  
+  .nav-link:active {
+    background-color: #3b3b4f;
+    color: $primario;
+    padding: 5px;
+  }
+
+  .headerIcon {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
+  
+.portada {
+  background-position-x: center;;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.portada__animate {
+  width: 80%;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: rgb(239, 236, 236, 0.5);
+  text-align: center;
+}
+
+.portada__animate__sub input {
+  width: 80%;
+  background-color: rgba(132, 132, 132, 0.475);
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+  height: 20px;
+  border-style: none;
+  border: 1px solid #3b3b4f;
+  border-radius: 2px;
+}
+
+.portada__animate__sub button {
+  width: 50%;
+  height: 25px;
+  border-radius: 2px;
+  background-color: #3b3b4f;
+  color: white;
+  margin: 15px;
+}
+
+.portada__animate__redes ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.b1__article {
+  display: flex;
+  margin: 15px;
+  div img {
+    width: 40%;
+    object-fit: cover;
+    margin: 0 0 0 15px;
+  }
+
+}
+
+.b1__article {
+  display: inline-block;
+  text-align: justify;
+  a h2 {
+    display: flex;
+    }
+  div {
+    display: inline-block;
+    div {
+      display: inline-block;
+    }
+    img {
+      margin-left: 0px;
+      @include img(100%, auto, cover);
+    }
+  }	
+}
+
+.c1-subscribite {
+  display: none;
+}
+
+footer {
+  height: auto;
+  background-color: $bg-primario;
+  margin: 50px 0;
+  padding: 15px 30px 15px;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: small;
+  text-align: center;
+}
+
+.footer__brand {
+  display: flex;
+  order: 4;  
+}
+
+.div-size-30 {
+  width: 100%;
+  min-width: 125px;
+  margin: 20px 0;
+}
+
+.div-size-20 {
+  width: 49%;
+  min-width: 100px;
+  order: 2;
+  margin: 20px 0;
+  
+}
+
+.footer__subscribe form {
+  text-align: start;
+  margin-top: 15px;
+}
+
+.footer__subscribe input {
+  width: 50%;
+}
+
+.footer__subscribe form p {
+  margin: 0;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #3b3b4f;
+}
+
+footer a:active {
+  background-color: #3b3b4f;
+  color: $primario;
+  padding: 2px;
+}
+
+footer li:active {
+  margin: 4px 0;
+  align-items: left;
+}
+
+.float--left, .float--right {
+  float: none;
+  margin: 0; 
+}
+.laidea img {
+  width: 100%;
+}
+.carousel-item {
+  width: 100%;
+  height: 200px;
+}
+
+.carousel-item img {
+  @include img(100%, 100%, cover);
+}
+
+}

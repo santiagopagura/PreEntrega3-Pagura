@@ -79,7 +79,6 @@ nav div a h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  /* offset-x | offset-y | blur-radius | spread-radius | color */
   box-shadow: 0 15px 10px 0px #5e5940, 0 -15px 10px 0px #5e5940;
 }
 .footer__brand {
@@ -594,7 +593,6 @@ iframe {
   height: 300px;
 }
 
-/* Formulario */
 textarea,
 input,
 label,

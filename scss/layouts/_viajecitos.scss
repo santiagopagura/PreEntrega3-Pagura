@@ -31,4 +31,10 @@
   
 .carousel-item img {
   @include img(100%, 100%, cover);
+  
+}
+
+.caja {
+  width: 450px;
+  height: 300px;
 }

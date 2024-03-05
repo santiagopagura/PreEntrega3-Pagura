@@ -2,8 +2,10 @@
 body {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    background-image: url("../asset/background/morocco.png");
-    background-repeat: repeat;
+    background-image: url("../asset/background/fondo21.jpg");
+		background-size: 400px;
+    background-repeat:repeat;
+		
   }
   
   main {
@@ -133,13 +135,25 @@ body {
 
 .b1__article {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+	margin: 0 50px 50px 50px;
+	a {
+		h2 {
+			display: none;
+		}
+	}
 	div {
-		width: 60%;
-	}
-	img {
-		@include img(40%, auto, cover);
-	}
-
+		display: flex;
+		div {
+			display: block;
+		}
+		img {
+			margin-left: 50px;
+			@include img(40%, auto, cover);
+		}
+	}	
 }
 
 .b2 {
@@ -147,6 +161,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 50px 0 50px 0;
+	h2 {
+		margin-bottom: 35px;
+		font-weight: 500;
+	}
 	
 }
 
@@ -161,7 +180,7 @@ body {
 		min-width: 180px;
 		text-align: center;
 		margin: 15px;
-		background-color: #dcf7fc;
+		background-color: #ffdd61;
 		padding: 10px;
 		border-radius: 10px;
 		border: #3EABC0 1px solid;
@@ -172,6 +191,10 @@ body {
 	}
 	&__texto {
 		width: 100%;
+		a h4 {
+			font-weight: 900;
+			color: red;
+		}
 		
 	}
 	img {
@@ -182,6 +205,11 @@ body {
   
 .c1 {
   grid-area: c1;
+	text-align: center;
+	margin: 50px 0;
+	h2 {
+		margin-bottom: 50px;
+	}
   &__contenedor {
     display: flex;
     overflow-x: auto;
@@ -190,10 +218,10 @@ body {
       width: 25%;
       min-width: 175px;
       margin: 1%;
-      background-color: #98d9d9;
+      background-color: #b4e8fd;
       padding: 10px;
       border-radius: 10px;
-      box-shadow: #3eaac03a 0px 0px 5px;           
+      box-shadow: #3eaac0 3px 3px 15px;           
       img {
         width: 100%;
         object-fit: cover;

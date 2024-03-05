@@ -16,6 +16,7 @@
       }
       p {
         margin: 0;
+        hyphens: auto;
       }
     }
   }
@@ -23,6 +24,8 @@
 
 .viajecito-article {
   margin-top: 70px;
+  hyphens: auto;
+  text-align: left
 }
 
 .carousel-item {

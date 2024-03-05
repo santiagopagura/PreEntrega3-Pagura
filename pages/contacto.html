@@ -45,19 +45,19 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="recursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recursos</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="recursos.html#uno">Manifestación de interés</a></li>
-                  <li><a class="dropdown-item" href="recursos.html#dos">¿Como conseguir trabajo?</a></li>
-                  <li><a class="dropdown-item" href="recursos.html#tres">¿Que es el NIF?</a></li>
-                  <li><a class="dropdown-item" href="recursos.html#cuatro">¿Que es el NISS y como conseguirlo?</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#mi">Manifestación de interés</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#trabajo">¿Como conseguir trabajo?</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#nif">¿Que es el NIF?</a></li>
+                  <li><a class="dropdown-item" href="recursos.html#niss">¿Que es el NISS y como conseguirlo?</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="viajecitos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Viajecitos</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="viajecitos.html#uno">Algarve</a></li>
-                  <li><a class="dropdown-item" href="viajecitos.html#dos">Lisboa</a></li>
-                  <li><a class="dropdown-item" href="viajecitos.html#tres">Porto</a></li>
-                  <li><a class="dropdown-item" href="viajecitos.html#cuatro">Alentejo</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#algarve">Algarve</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#lisboa">Lisboa</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#porto">Porto</a></li>
+                  <li><a class="dropdown-item" href="viajecitos.html#alentejo">Alentejo</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -70,14 +70,14 @@
     </nav>
   </header>
 
-  <main>
+  <main class="contacto">
     <section>
       <div>
         <h2>PARTICIPA!</h2>
         <p>¡Suma tu voz a nuestra iniciativa de difusion sobre emigrar a Portugal! Comparte tu experiencia o perspectiva en un relato único. Tu participación puede guiar a otros en esta emocionante travesía. ¡Únete ahora y ayúdanos a enriquecer la comunidad de emigrantes!</p>
-        <div class="flex">
-          <img class="contacto-img " src="../asset/img/surf.jpg" alt="personas con tablas de surf">
-          <img class="contacto-img" src="../asset/img/laIdea.jpg" alt="imagen de calle peatonal en Portugal con bares en un cielo despejado">
+        <div>
+          <img src="../asset/img/surf.jpg" alt="personas con tablas de surf">
+          <img src="../asset/img/laIdea.jpg" alt="imagen de calle peatonal en Portugal con bares en un cielo despejado">
         </div>
       </div>
 
@@ -88,7 +88,6 @@
             <label for="form-name">Nombre:<input id="form-name" name="nombre" placeholder="Ingrese su nombre" required></label>
             <label for="form-email">Email:<input type="email" id="form-email" name="email" placeholder="Ingrese su email" required></label>
         </fieldset>
-
         <fieldset>
           <legend>Motivo de contacto</legend>
           <label for="select">Seleccione una opcion:  
@@ -99,17 +98,16 @@
                 <option value="otro">Otro asunto</option>
             </select>
           </label>
-        <label for="form-coment">Mensaje:<textarea id="form-coment" placeholder="Escriba aqui" rows=”10” cols=”100”  required></textarea></label>
-      </fieldset>
-        <input type="submit" value="Enviar"   name="mensaje"/>
-    </form>
+          <label for="form-coment">Mensaje:<textarea id="form-coment" placeholder="Escriba aqui" rows=”10” cols=”100”  required></textarea></label>
+        </fieldset>
+        <input type="submit" value="Enviar" id="button"  name="mensaje"/>
+      </form>
 
-    <div class="map-div">
-      <h3>Portugal, ¿donde?</h3>
-      <p>Acá estamos...</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13300666.478501316!2d-29.434839202832368!3d35.52323871163527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb32242dbf4226d5%3A0x2ab84b091c4ef041!2sPortugal!5e0!3m2!1ses!2spt!4v1705091511170!5m2!1ses!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Mapa de Portugal y sus islas provisto por GoogleMaps</iframe>
-    </div>
-
+      <div class="map-div">
+        <h3>Portugal, ¿donde?</h3>
+        <p>Acá estamos...</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27071445.049333394!2d-40.16622617852922!3d34.07926043517871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb32242dbf4226d5%3A0x2ab84b091c4ef041!2sPortugal!5e0!3m2!1ses!2spt!4v1709665552748!5m2!1ses!2spt" class="iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Mapa de Portugal y sus islas provisto por GoogleMaps</iframe>
+      </div>
 
     </section>
   </main>

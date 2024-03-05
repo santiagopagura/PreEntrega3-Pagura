@@ -377,13 +377,14 @@ main {
 /* PUBLICIDAD */
 .p1 {
   grid-area: p1;
+  background-color: brown;
+  color: aliceblue;
+  width: 200px;
+  height: 100%;
 }
 
 .p2 {
   grid-area: p2;
-}
-
-.p1, .p2 {
   background-color: brown;
   color: aliceblue;
   width: 200px;
@@ -418,10 +419,13 @@ main {
 }
 .viajecito__card__texto p {
   margin: 0;
+  hyphens: auto;
 }
 
 .viajecito-article {
   margin-top: 70px;
+  hyphens: auto;
+  text-align: left;
 }
 
 .carousel-item {
@@ -517,6 +521,8 @@ main {
 .recursosMain p {
   margin: 10px 0;
   font-weight: 500;
+  text-align: justify;
+  hyphens: auto;
 }
 .recursosMain a {
   font-weight: 600;
@@ -531,31 +537,64 @@ main {
 }
 
 /* CONTACTO */
-.contacto-img {
-  max-height: 250px;
-  width: 45%;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.contacto section div div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contacto section div div img {
+  width: 49%;
+  min-width: 200px;
   object-fit: cover;
-  margin: 15px 15px;
+}
+
+.form {
+  margin: 100px auto;
+  width: 70%;
+  background-color: #b9f1fe;
+  box-shadow: 5px 5px 15px #66858b;
+  padding: 15px;
+  border-radius: 5px;
+}
+.form h3 {
+  margin-bottom: 20px;
+}
+.form fieldset {
+  margin: 0 auto;
+}
+.form input, .form select {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #f5fdff;
+}
+
+textarea {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .map-div {
-  margin-top: 50px;
+  margin: 0 auto;
+}
+
+button {
+  color: #b9f1fe;
+  background-color: #66858b;
 }
 
 iframe {
-  width: 400px;
+  width: 85%;
   height: 300px;
 }
 
 /* Formulario */
-.form {
-  width: 70%;
-  margin: 40px 0;
-  background-color: rgb(185, 241, 254);
-  padding: 15px;
-  border-radius: 5px;
-}
-
 textarea,
 input,
 label,
@@ -609,6 +648,9 @@ label {
   .a1 {
     grid-area: a1;
   }
+  .portada {
+    background-position-x: center;
+  }
   .portada__animate {
     width: 50%;
   }
@@ -617,13 +659,12 @@ label {
   }
   .b1__article {
     display: flex;
+    margin: 15px;
   }
-  .b1__article div {
-    width: 60%;
-  }
-  .b1__article img {
+  .b1__article div img {
     width: 40%;
     object-fit: cover;
+    margin: 0 0 0 15px;
   }
   .b2 {
     grid-area: b2;
@@ -640,6 +681,32 @@ label {
   }
   .footer {
     height: auto;
+  }
+}
+@media screen and (max-width: 593px) {
+  .portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portada__animate {
+    width: 80%;
+  }
+  .recursosMain__article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .caja {
+    width: 100%;
+    height: 300px;
+  }
+  .contacto section div div img {
+    margin: 15px;
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
   }
 }
 @media screen and (max-width: 440px) {
@@ -695,9 +762,7 @@ label {
     margin-right: 5px;
   }
   .portada {
-    background-image: url(../asset/img/animate.jpg);
-    background-size: cover;
-    background-position: left;
+    background-position-x: center;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -734,6 +799,34 @@ label {
   .portada__animate__redes ul {
     display: flex;
     justify-content: space-evenly;
+  }
+  .b1__article {
+    display: flex;
+    margin: 15px;
+  }
+  .b1__article div img {
+    width: 40%;
+    object-fit: cover;
+    margin: 0 0 0 15px;
+  }
+  .b1__article {
+    display: inline-block;
+    text-align: justify;
+  }
+  .b1__article a h2 {
+    display: flex;
+  }
+  .b1__article div {
+    display: inline-block;
+  }
+  .b1__article div div {
+    display: inline-block;
+  }
+  .b1__article div img {
+    margin-left: 0px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   .c1-subscribite {
     display: none;

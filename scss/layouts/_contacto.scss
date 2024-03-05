@@ -1,28 +1,59 @@
-.contacto-img {
-  max-height: 250px;
-  width: 45%;
-  object-fit: cover;
-  margin: 15px 15px;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px; 
+  section div div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+      width: 49%;
+      min-width: 200px;
+      object-fit: cover;
+    }
+  }
+}
+
+.form {
+  margin: 100px auto;
+  width: 70%;
+  background-color:#b9f1fe;
+  box-shadow: 5px 5px 15px #66858b;
+  padding: 15px;
+  border-radius: 5px;
+  h3 {
+    margin-bottom: 20px;
+  }
+  fieldset {
+    margin: 0 auto;
+  }
+  input, select {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #f5fdff;
+  }
+}
+textarea {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .map-div {
-    margin-top: 50px;
+  margin: 0 auto;
 }
-
+button {
+  color: #b9f1fe;
+  background-color: #66858b;
+}
 iframe {
-  width: 400px;
+  width: 85%;
   height: 300px;
 }
 
 /* Formulario */
 
-.form {
-  width: 70%;
-  margin: 40px 0;
-  background-color:rgb(185, 241, 254);
-  padding: 15px;
-  border-radius: 5px;
-}
 
 textarea,
 input,
@@ -30,6 +61,7 @@ label,
 select {
   display: block;
   font-family: "Raleway", sans-serif;
+
 }
 
 label {

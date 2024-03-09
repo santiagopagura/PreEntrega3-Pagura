@@ -683,6 +683,7 @@ label {
 }
 @media screen and (max-width: 593px) {
   .portada {
+    background-image: url("../asset/img/animateMq593.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -760,6 +761,7 @@ label {
     margin-right: 5px;
   }
   .portada {
+    background-image: url("../asset/img/animateMq593.jpg");
     background-position-x: center;
     height: 400px;
     display: flex;
